@@ -1,0 +1,19 @@
+@import './variables';
+@import './mixins';
+@import './header';
+
+.contact {
+  @include flexCenter(row);
+  background: rgb(220, 232, 236);
+
+  button {
+    @include btnStyle($secondaryBtn, 30px, 300px) // background: $primaryBtn;
+    // color: $btnText;
+  }
+}
+
+.bye {
+  @extend header;
+  background: rgb(208, 243, 255);
+  height: (100vh - 50vh)*2;
+}
